@@ -79,15 +79,99 @@ This is the **heart of the system** — how everything runs.
 
 Handles **data collection, parsing, and embedding**
 
-- ingestion/
-├── fetch_arxiv.py
-├── parse_pdf.py
-├── image_reasoning.py
-├── chunking.py
-├── deduplication.py
-├── embed_store.py
-├── parser.py
-├── metadata.py
-├── trust_scoring.py
-├── index_management.py
-└── loaders/*
+**ingestion**
+
+- fetch_arxiv.py
+─ parse_pdf.py
+─ image_reasoning.py
+─ chunking.py
+─ deduplication.py
+─ embed_store.py
+─ parser.py
+─ metadata.py
+─ trust_scoring.py
+─ index_management.py
+
+🔍 Key Concepts:
+- PDF parsing (text + images)
+- OCR + image reasoning (LLaVA)
+- Chunking strategies
+- Embedding pipelines (ChromaDB)
+- Data validation & trust scoring
+
+---
+
+### 🔍 3. Retrieval Layer (Search & Ranking)
+
+Responsible for **finding the best context**
+
+**retrieval**
+
+─ multi_query.py
+─ hybrid_search.py
+─ reranker.py
+─ query_understanding.py
+─ query_classifier.py
+─ filters.py
+─ context_validator.py
+─ context_optimizer.py
+
+🔍 Key Concepts:
+- Multi-query expansion
+- Hybrid search (Vector + BM25)
+- Reranking (MiniLM / CrossEncoder)
+- Query classification
+- Context filtering & optimization
+
+---
+
+### 🤖 4. LLM Layer (Reasoning Engine)
+
+Handles **prompting and final answer generation**
+
+**llm**
+
+─ prompt.py
+─ prompt_builder.py
+─ prompt_versions/*
+─ generator.py
+─ model_router.py
+─ guardrails.py
+─ output_validator.py
+
+
+🔍 Key Concepts:
+- Prompt engineering
+- Model routing (Ollama/OpenAI)
+- Output validation
+- Guardrails & hallucination control
+
+---
+
+### 🛡️ 5. System Layers (Production Readiness)
+
+- security
+- safety
+- reliability
+- cache
+- observability
+- core
+- config/settings.py
+
+🔍 Covers:
+- Security & access control
+- Safety filters
+- Caching strategies
+- Monitoring & logging
+- Core configurations
+
+---
+
+### 📊 6. Evaluation & Experimentation
+
+governance/*
+feedback/*
+evaluation/*
+experiments/*
+scripts/*
+tests/*
