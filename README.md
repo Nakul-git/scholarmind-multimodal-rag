@@ -67,3 +67,27 @@ For every Python file, the breakdown includes:
 ### 🚀 1. Runtime Spine (Core Execution Flow)
 
 This is the **heart of the system** — how everything runs.
+
+- main.py
+- pipeline/rag_pipeline.py
+- api/app.py
+- streamlit_app.py
+
+---
+
+### 📥 2. Ingestion Layer (Data Processing Pipeline)
+
+Handles **data collection, parsing, and embedding**
+
+- ingestion/
+├── fetch_arxiv.py
+├── parse_pdf.py
+├── image_reasoning.py
+├── chunking.py
+├── deduplication.py
+├── embed_store.py
+├── parser.py
+├── metadata.py
+├── trust_scoring.py
+├── index_management.py
+└── loaders/*
