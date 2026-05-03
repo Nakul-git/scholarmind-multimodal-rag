@@ -1,14 +1,14 @@
 # 🧠 ScholarMind — Multimodal Research Intelligence System
 
-> An **engineering-grade, production-ready RAG system** that fetches, parses, understands, and reasons over arXiv research papers — combining text, images, and LLMs into a unified multimodal intelligence pipeline.
+> An **engineering-grade, production-ready RAG system** that fetches, parses, understands, and reasons over arXiv research papers — combining text, images, and LLMs into a unified multimodal intelligence pipeline with a **full LLMOps backend**.
 
 ---
 
 ## 📌 What is ScholarMind?
 
-ScholarMind is a **Multimodal Retrieval-Augmented Generation (RAG) system** built for deep research intelligence over scientific papers. It ingests arXiv PDFs, extracts both text and visual content, stores rich embeddings, and generates grounded answers using a full LLMOps-grade backend.
+ScholarMind is a **Multimodal Retrieval-Augmented Generation (RAG) system** built for deep research intelligence over scientific papers. It ingests arXiv PDFs, extracts both text and visual content, stores rich embeddings, and generates grounded answers through a **production-grade LLMOps pipeline**.
 
-This is not a wrapper around a search API — it is a **complete AI system** with ingestion, retrieval, reasoning, safety, caching, observability, and evaluation layers built from the ground up.
+This is not a wrapper around a search API — it is a **complete AI system** with ingestion, retrieval, reasoning, evaluation, and observability layers built from the ground up.
 
 ---
 
@@ -29,17 +29,22 @@ arXiv Papers (PDF)
        │
        ▼
 ┌─────────────────────┐
-│   Retrieval Layer   │  query expansion → hybrid search → rerank → filter
+│   Retrieval Layer   │  query expansion → hybrid search → rerank
 └─────────────────────┘
        │
        ▼
 ┌─────────────────────┐
-│     LLM Layer       │  prompt building → model routing → guardrails → output
+│   LLMOps Layer      │  prompt versioning → model routing → guardrails → evaluation
 └─────────────────────┘
        │
        ▼
 ┌─────────────────────┐
-│   API / UI Layer    │  FastAPI (REST) + Streamlit (UI)
+│     LLM Layer       │  prompt building → generation → response
+└─────────────────────┘
+       │
+       ▼
+┌─────────────────────┐
+│     UI Layer        │  Streamlit (UI) + FastAPI (REST)
 └─────────────────────┘
 ```
 
@@ -47,34 +52,88 @@ arXiv Papers (PDF)
 
 ## 🏗️ Repository Structure
 
-### 🚀 Runtime Spine — Core Execution
-
 ```
-main.py                    # Application entry point
-pipeline/rag_pipeline.py   # End-to-end RAG orchestration
-api/app.py                 # FastAPI REST interface
-streamlit_app.py           # Streamlit web UI
+arXiv/
+├── api/
+│   └── app.py                    # FastAPI REST interface
+│
+├── core/
+│   ├── cache.py                  # Query-level and embedding-level caching
+│   ├── config.py                 # Centralized configuration management
+│   ├── logging_utils.py          # Structured logging across all pipeline stages
+│   ├── model_registry.py         # LLM model registration and management
+│   ├── monitoring.py             # Runtime metrics and performance tracking
+│   └── security.py               # Authentication, authorization, rate limiting
+│
+├── data/
+│   ├── embeddings/               # Stored vector embeddings
+│   ├── images/                   # Extracted paper images and figures
+│   ├── parsed/                   # Processed and structured paper content
+│   └── raw_papers/               # Original downloaded arXiv PDFs
+│
+├── evaluation/
+│   ├── eval_questions.json       # Evaluation question bank
+│   ├── evaluate_rag.py           # RAG evaluation — faithfulness, relevance, recall
+│   └── experiment_tracking.py    # Experiment logging and comparison
+│
+├── ingestion/
+│   ├── chunking.py               # Splits content into retrieval-ready chunks
+│   ├── deduplication.py          # Removes duplicate content before indexing
+│   ├── embed_store.py            # Generates embeddings and stores in ChromaDB
+│   ├── fetch_arxiv.py            # Fetches papers from the arXiv API
+│   ├── image_reasoning.py        # OCR + visual understanding via LLaVA
+│   ├── index_management.py       # Manages ChromaDB index lifecycle
+│   └── parse_pdf.py              # Extracts text and structure from PDFs
+│
+├── llm/
+│   ├── generator.py              # Calls the LLM and streams the response
+│   ├── prompt.py                 # Core prompt templates
+│   └── prompt_versions.py        # Versioned prompt history for A/B testing
+│
+├── pipeline/
+│   └── rag_pipeline.py           # End-to-end RAG orchestration
+│
+├── retrieval/
+│   ├── hybrid_search.py          # Dense (vector) + sparse (BM25) search
+│   ├── multi_query.py            # Expands a single query into multiple angles
+│   ├── query_understanding.py    # Parses and enriches query intent
+│   └── reranker.py               # Cross-encoder reranking (MiniLM / CrossEncoder)
+│
+├── logs/                         # Runtime logs for debugging and audit trails
+├── main.py                       # Application entry point
+├── streamlit_app.py              # Streamlit web UI
+├── requirements.txt              # Python dependencies
+└── .env.example                  # Environment variable template
 ```
 
 ---
 
-### 📥 Ingestion Layer — Data Processing Pipeline
+## 🔍 Layer Breakdown
 
-Handles the full journey from raw PDF to searchable embeddings.
+### 🚀 Runtime Spine — Core Execution
+
+```
+main.py                        # Entry point — boots the full system
+pipeline/rag_pipeline.py       # Orchestrates the end-to-end RAG flow
+api/app.py                     # FastAPI REST interface
+streamlit_app.py               # Streamlit web UI
+```
+
+---
+
+### 📥 Ingestion Layer
+
+Handles the full journey from raw arXiv PDF to searchable embeddings.
 
 ```
 ingestion/
-├── fetch_arxiv.py         # Fetches papers from the arXiv API
-├── parse_pdf.py           # Extracts text and structure from PDFs
-├── image_reasoning.py     # OCR + visual understanding via LLaVA
-├── chunking.py            # Splits content into retrieval-ready chunks
-├── deduplication.py       # Removes duplicate content before indexing
-├── embed_store.py         # Generates embeddings and stores in ChromaDB
-├── parser.py              # Low-level document parsing utilities
-├── metadata.py            # Extracts and structures paper metadata
-├── trust_scoring.py       # Scores source reliability
-├── index_management.py    # Manages ChromaDB index lifecycle
-└── loaders/               # Format-specific document loaders
+├── fetch_arxiv.py             # Fetches papers from the arXiv API
+├── parse_pdf.py               # Extracts text and structure from PDFs
+├── image_reasoning.py         # OCR + visual understanding via LLaVA
+├── chunking.py                # Splits content into retrieval-ready chunks
+├── deduplication.py           # Removes duplicate content before indexing
+├── embed_store.py             # Generates embeddings and stores in ChromaDB
+└── index_management.py        # Manages ChromaDB index lifecycle
 ```
 
 **Pipeline:**
@@ -84,84 +143,110 @@ Raw PDF → parse_pdf → image_reasoning → chunking → deduplication → emb
 
 ---
 
-### 🔍 Retrieval Layer — Search & Ranking
+### 🔍 Retrieval Layer
 
-Finds the most relevant context for any query using hybrid, multi-stage retrieval.
+Finds the most relevant context using hybrid, multi-stage retrieval.
 
 ```
 retrieval/
-├── multi_query.py         # Expands a single query into multiple search angles
-├── hybrid_search.py       # Combines dense (vector) + sparse (BM25) search
-├── reranker.py            # Cross-encoder reranking (MiniLM / CrossEncoder)
-├── query_understanding.py # Parses and enriches query intent
-├── query_classifier.py    # Routes query to the appropriate retrieval strategy
-├── filters.py             # Metadata-based pre/post filtering
-├── context_validator.py   # Validates retrieved chunks for relevance
-└── context_optimizer.py   # Trims and optimizes context for the LLM window
+├── multi_query.py             # Expands a single query into multiple search angles
+├── hybrid_search.py           # Dense (ChromaDB) + sparse (BM25) search
+├── reranker.py                # Cross-encoder reranking (MiniLM / CrossEncoder)
+└── query_understanding.py     # Parses and enriches query intent
 ```
 
 **Pipeline:**
 ```
-User Query → query_classifier → multi_query → hybrid_search → reranker → context_optimizer → LLM
+User Query → query_understanding → multi_query → hybrid_search → reranker → LLM
 ```
 
 ---
 
-### 🤖 LLM Layer — Reasoning Engine
+### 🤖 LLM Layer
 
-Handles prompt construction, model selection, and safe output generation.
+Handles prompt construction and grounded answer generation.
 
 ```
 llm/
-├── prompt.py              # Core prompt templates
-├── prompt_builder.py      # Dynamically assembles prompts from context + query
-├── prompt_versions/       # Versioned prompt history for A/B testing
-├── generator.py           # Calls the LLM and streams the response
-├── model_router.py        # Routes requests between Ollama / OpenAI backends
-├── guardrails.py          # Input/output safety enforcement
-└── output_validator.py    # Validates final answers for quality and grounding
+├── prompt.py                  # Core prompt templates
+├── prompt_versions.py         # Versioned prompt history for A/B testing
+└── generator.py               # Calls the LLM and streams the response
 ```
 
 **Pipeline:**
 ```
-Context + Query → prompt_builder → model_router → generator → output_validator → Response
+Context + Query → prompt (versioned) → generator → Response
 ```
 
 ---
 
-### 🛡️ System Layers — Production Readiness
+### ⚙️ LLMOps Layer — Production AI Operations
+
+> The operational backbone that makes ScholarMind **production-ready** — not just a demo.
 
 ```
-security/        # Authentication, authorization, rate limiting
-safety/          # Content moderation and unsafe query handling
-reliability/     # Retry logic, circuit breakers, fallback handling
-cache/           # Query-level and embedding-level caching
-observability/   # Logging, tracing, metrics collection
-core/            # Shared utilities, base classes, interfaces
-config/
-└── settings.py  # Centralized configuration and environment management
+core/
+├── cache.py                   # Query-level and embedding-level caching
+├── config.py                  # Centralized environment and settings management
+├── logging_utils.py           # Structured logging across every pipeline stage
+├── model_registry.py          # LLM model registration, versioning, and routing
+├── monitoring.py              # Latency, retrieval quality, and model performance
+└── security.py                # Auth, authorization, and rate limiting
+
+llm/
+└── prompt_versions.py         # Full prompt history — rollback and A/B comparison
+
+evaluation/
+├── evaluate_rag.py            # Faithfulness, relevance, and recall scoring
+├── experiment_tracking.py     # Tracks and compares experiments over time
+└── eval_questions.json        # Curated evaluation question bank
+
+logs/                          # Audit trail and runtime logs
 ```
+
+**LLMOps Flow:**
+```
+Query In
+   │
+   ├── cache.py        → cache hit? return instantly
+   │
+   ├── prompt.py       → versioned prompt assembly
+   │
+   ├── model_registry  → route to correct model
+   │
+   ├── generator.py    → streamed LLM response
+   │
+   ├── monitoring.py   → log latency + metrics
+   │
+   ├── logging_utils   → structured audit log
+   │
+   └── evaluate_rag    → faithfulness · relevance · recall
+```
+
+**Key LLMOps Capabilities:**
+
+| Capability | File |
+|------------|------|
+| 🔀 Model Routing & Registry | `core/model_registry.py` |
+| 📝 Prompt Versioning | `llm/prompt_versions.py` |
+| ⚡ Caching | `core/cache.py` |
+| 🔭 Observability & Logging | `core/logging_utils.py` + `logs/` |
+| 📊 Performance Monitoring | `core/monitoring.py` |
+| 🛡️ Security & Auth | `core/security.py` |
+| ✅ RAG Evaluation | `evaluation/evaluate_rag.py` |
+| 🧪 Experiment Tracking | `evaluation/experiment_tracking.py` |
+| ⚙️ Config Management | `core/config.py` |
 
 ---
 
-### 📊 Evaluation & Experimentation
+### 🗂️ Data Store
 
 ```
-governance/      # Policy enforcement and compliance rules
-feedback/        # User feedback collection and signal processing
-evaluation/      # RAG evaluation metrics (faithfulness, relevance, recall)
-experiments/     # Experiment tracking and comparison
-scripts/         # Utility and automation scripts
-tests/           # Unit, integration, and end-to-end test suites
-```
-
----
-
-### 🗂️ Data & Logs
-
-```
-data/            # Stored embeddings, paper metadata, processed chunks
-logs/            # Runtime logs for debugging and audit trails
+data/
+├── embeddings/                # Stored vector embeddings (ChromaDB)
+├── images/                    # Extracted paper figures and diagrams
+├── parsed/                    # Processed and structured paper content
+└── raw_papers/                # Original downloaded arXiv PDFs
 ```
 
 ---
@@ -169,25 +254,33 @@ logs/            # Runtime logs for debugging and audit trails
 ## 🔎 End-to-End Query Flow
 
 ```
-1. User submits a research question via UI or API
-        │
-2. query_classifier identifies intent and scope
-        │
-3. multi_query expands it into parallel search queries
-        │
-4. hybrid_search runs dense + sparse retrieval over ChromaDB
-        │
-5. reranker scores and selects the top-k chunks
-        │
-6. context_optimizer trims context to fit the LLM window
-        │
-7. prompt_builder assembles the final prompt
-        │
-8. model_router sends it to Ollama (local) or OpenAI (cloud)
-        │
-9. guardrails + output_validator ensure safe, grounded output
-        │
-10. Response streamed back to user
+1.  User submits a research question via Streamlit UI or API
+         │
+2.  security.py validates the request
+         │
+3.  cache.py checks for a cached response → returns instantly on hit
+         │
+4.  query_understanding.py parses and enriches query intent
+         │
+5.  multi_query.py expands it into parallel search queries
+         │
+6.  hybrid_search.py runs dense + sparse retrieval over ChromaDB
+         │
+7.  reranker.py scores and selects the top-k chunks
+         │
+8.  prompt.py assembles prompt from versioned template
+         │
+9.  model_registry.py routes to the correct LLM backend
+         │
+10. generator.py streams the response
+         │
+11. monitoring.py logs latency and performance metrics
+         │
+12. logging_utils.py writes structured audit log
+         │
+13. evaluate_rag.py scores faithfulness, relevance, recall
+         │
+14. Response streamed back to user
 ```
 
 ---
@@ -203,9 +296,16 @@ logs/            # Runtime logs for debugging and audit trails
 | Sparse Search | BM25 |
 | Reranking | MiniLM / CrossEncoder |
 | LLM Backend | Ollama (local) / OpenAI |
+| Prompt Versioning | `llm/prompt_versions.py` |
+| Model Registry | `core/model_registry.py` |
+| Caching | `core/cache.py` |
+| Monitoring | `core/monitoring.py` |
+| Observability | `core/logging_utils.py` + `logs/` |
+| Security | `core/security.py` |
+| Evaluation | `evaluation/evaluate_rag.py` |
+| Experiment Tracking | `evaluation/experiment_tracking.py` |
 | API | FastAPI |
 | UI | Streamlit |
-| Observability | Custom logging + metrics |
 
 ---
 
@@ -221,7 +321,7 @@ pip install -r requirements.txt
 
 # Configure environment
 cp .env.example .env
-# Edit .env with your API keys and settings
+# Edit .env with your settings
 
 # Run ingestion
 python main.py --ingest
@@ -237,7 +337,7 @@ streamlit run streamlit_app.py
 
 ## ⚙️ Configuration
 
-All system behaviour is controlled via `config/settings.py` and the `.env` file:
+All system behaviour is controlled via `core/config.py` and the `.env` file:
 
 ```env
 ARXIV_QUERY=...          # Default arXiv search query
@@ -249,4 +349,4 @@ LOG_LEVEL=...            # Logging verbosity
 
 ---
 
-> 🔥 **ScholarMind is a fully owned, fully understood, production-grade AI system — not just a project.**
+> 🔥 **ScholarMind is not just a RAG project — it's a fully operational AI system with a complete LLMOps backbone, built to production standard from the ground up.**
