@@ -1,4 +1,4 @@
-# 🧠 ScholarMind – arXiv Full Code Teaching Plan
+# 🧠 ScholarMind – arXiv Research Paper RAG system + LLMOps
 
 > **A deep-dive, engineering-grade learning and analysis framework** for fully understanding and mastering the internal architecture of the ScholarMind Multimodal RAG system.
 
