@@ -1,0 +1,106 @@
+
+You are a highly accurate research paper assistant.
+Rules:
+- Use ONLY provided context
+- No hallucination
+- Cite inline [Chunk X]
+- Mention page if relevant
+- If insufficient context, say so
+- Separate explanation and evidence
+
+Context:
+[Chunk 1]
+Title: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Type: image_reasoning
+Section: None
+Image: data/images\2112.08534v3\page_17_image_1.png
+
+Content:
+- MHA: Likely refers to "Multi-Head Attention," a type of attention mechanism used in the Transformer architecture.
+   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.
+   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.
+   - Output embedding: The final output embeddings after the system has processed the data.
+   - X attention: This could refer to an additional attention mechanism that is applied somewhere in the process, but its specific role is unclear from this image.
+   - Positional encoding: A form of input where positional information (e.g., order in a sequence) is added to the input data to help the model understand the context of each element within the data.
+
+[Chunk 2]
+Title: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Type: image_reasoning
+Section: None
+Image: data/images\2112.08534v3\page_17_image_1.png
+
+Content:
+- MHA: Likely refers to "Multi-Head Attention," a type of attention mechanism used in the Transformer architecture.
+   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.
+   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.
+   - Output embedding: The final output embeddings after the system has processed the data.
+   - X attention: This could refer to an additional attention mechanism that is applied somewhere in the process, but its specific role is unclear from this image.
+   - Positional encoding: A form of input where positional information (e.g., order in a sequence) is added to the input data to help the model understand the context of each element within the data.
+
+[Chunk 3]
+Title: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Type: image_reasoning
+Section: None
+Image: data/images\2112.08534v3\page_17_image_1.png
+
+Content:
+- MHA: Likely refers to "Multi-Head Attention," a type of attention mechanism used in the Transformer architecture.
+   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.
+   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.
+   - Output embedding: The final output embeddings after the system has processed the data.
+   - X attention: This could refer to an additional attention mechanism that is applied somewhere in the process, but its specific role is unclear from this image.
+   - Positional encoding: A form of input where positional information (e.g., order in a sequence) is added to the input data to help the model understand the context of each element within the data.
+
+[Chunk 4]
+Title: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Type: image_reasoning
+Section: None
+Image: data/images\2112.08534v3\page_17_image_1.png
+
+Content:
+- MHA: Likely refers to "Multi-Head Attention," a type of attention mechanism used in the Transformer architecture.
+   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.
+   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.
+   - Output embedding: The final output embeddings after the system has processed the data.
+   - X attention: This could refer to an additional attention mechanism that is applied somewhere in the process, but its specific role is unclear from this image.
+   - Positional encoding: A form of input where positional information (e.g., order in a sequence) is added to the input data to help the model understand the context of each element within the data.
+
+[Chunk 5]
+Title: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 19
+Type: text
+Section: None
+Image: None
+
+Content:
+between the the naive uniform distribution Q and
+self-attention probability distribution P, as deﬁned
+by (1), is calculated. The query is only set to active
+if there is substantial distance. This mechanism
+to distinguish essential queries is referred to as
+ProbSparse self-attention. In this paper we set the
+top quartile of queries as active. Furthermore, the
+architecture decreases the dimension dq by half for
+each layer to further reduce the parameter space,
+which is a process termed as ‘distilling’.
+C. Experiment Settings
+We calibrate our model using the training data by
+optimising on the Sharpe loss function via minibatch
+Stochastic Gradient Descent (SGD), using the Adam
+optimiser [39]. We list the ﬁxed model parameters
+for each architecture in Exhibit 15. We keep the
+last 10% of the training data, for each asset, as a
+validation set. We implement random grid search,
+
+Question:
+Retrieval Augmented Generation
+
+Return format:
+Explanation:
+...
+Evidence:
+- [Chunk X] ...

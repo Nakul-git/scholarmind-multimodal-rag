@@ -1,0 +1,61 @@
+[
+  {
+    "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.\n   - Output embedding: The final output embeddings after the system has processed the data.\n   - X ",
+    "metadata": {
+      "page": 17,
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+      "paper_id": "2112.08534v3",
+      "source": "data/raw_papers\\2112.08534v3.pdf",
+      "type": "image_reasoning",
+      "chunk_index": 1,
+      "image_path": "data/images\\2112.08534v3\\page_17_image_1.png"
+    }
+  },
+  {
+    "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.\n   - Output embedding: The final output embeddings after the system has processed the data.\n   - X ",
+    "metadata": {
+      "source": "data/raw_papers\\2112.08534v3.pdf",
+      "paper_id": "2112.08534v3",
+      "type": "image_reasoning",
+      "page": 17,
+      "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+      "chunk_index": 1,
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+    }
+  },
+  {
+    "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.\n   - Output embedding: The final output embeddings after the system has processed the data.\n   - X ",
+    "metadata": {
+      "page": 17,
+      "chunk_index": 1,
+      "source": "data/raw_papers\\2112.08534v3.pdf",
+      "paper_id": "2112.08534v3",
+      "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+      "type": "image_reasoning"
+    }
+  },
+  {
+    "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding: Indicates the encoding of the input embeddings to represent the context or meaning more abstractly.\n   - Output embedding: The final output embeddings after the system has processed the data.\n   - X ",
+    "metadata": {
+      "type": "image_reasoning",
+      "source": "data/raw_papers\\2112.08534v3.pdf",
+      "page": 17,
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+      "chunk_index": 1,
+      "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+      "paper_id": "2112.08534v3"
+    }
+  },
+  {
+    "content": "between the the naive uniform distribution Q and\nself-attention probability distribution P, as deﬁned\nby (1), is calculated. The query is only set to active\nif there is substantial distance. This mechanism\nto distinguish essential queries is referred to as\nProbSparse self-attention. In this paper we set the\ntop quartile of queries as active. Furthermore, the\narchitecture decreases the dimension dq by half for\neach layer to further reduce the parameter space,\nwhich is a process termed as ‘distill",
+    "metadata": {
+      "chunk_index": 0,
+      "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+      "type": "text",
+      "page": 19,
+      "paper_id": "2112.08534v3",
+      "source": "data/raw_papers\\2112.08534v3.pdf"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "question": "Retrieval Augmented Generation",
+  "queries": [
+    "Retrieval Augmented Generation",
+    "1. \"title: 'retrieval augmented generation' AND topic: NLP\"",
+    "2. (\"retrieval\" OR \"augmented\") AND (\"generation\" OR \"text summarization\")",
+    "3. (\"RAG\" OR \"Retrieval Augmented Generation\") AND (\"NLP\" OR \"natural language processing\")",
+    "4. (\"search query\" OR \"information retrieval\") AND (\"generation\" OR \"summarization\")"
+  ]
+}

@@ -1,0 +1,493 @@
+[
+  {
+    "query": "Retrieval Augmented Generation",
+    "results": [
+      {
+        "content": "AAAI Conference on Artiﬁcial Intelligence, AAAI 2021, Virtual\nConference, vol. 35, no. 12.\nAAAI Press, 2021, pp. 11 106–\n11 115.\n[20] Y.-H. H. Tsai, S. Bai, M. Yamada, L.-P. Morency, and\nR.\nSalakhutdinov,\n“Transformer\ndissection:\nAn\nuniﬁed\nunderstanding for transformer’s attention via the lens of ke",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 14,
+          "chunk_index": 0,
+          "type": "text"
+        }
+      },
+      {
+        "content": "Trading with the Momentum Transformer:\nAn Intelligent and Interpretable Architecture\nKieran Wood∗, Sven Giegerich†, Stephen Roberts∗, Stefan Zohren∗\n∗Oxford-Man Institute of Quantitative Finance, University of Oxford\n†Oxford Internet Institute, University of Oxford\nAbstract—We introduce the Momentum",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "chunk_index": 0,
+          "paper_id": "2112.08534v3",
+          "page": 1,
+          "type": "text",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+        }
+      },
+      {
+        "content": "between the the naive uniform distribution Q and\nself-attention probability distribution P, as deﬁned\nby (1), is calculated. The query is only set to active\nif there is substantial distance. This mechanism\nto distinguish essential queries is referred to as\nProbSparse self-attention. In this paper we",
+        "metadata": {
+          "chunk_index": 0,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "text",
+          "page": 19,
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf"
+        }
+      },
+      {
+        "content": "longer-term dependencies, improves performance when\nconsidering returns net of transaction costs and naturally\nadapts to new market regimes, such as during the SARS-\nCoV-2 crisis. Via the introduction of multiple attention\nheads, we can capture concurrent regimes, or temporal\ndynamics, which are occ",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "text",
+          "page": 1,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 1
+        }
+      },
+      {
+        "content": "variables,” arXiv preprint arXiv:1604.06737, 2016.\n[33] N. Srivastava, G. Hinton, A. Krizhevsky, I. Sutskever, and\nR. Salakhutdinov, “Dropout: A simple way to prevent neu-\nral networks from overﬁtting,” Journal of Machine Learning\nResearch, vol. 15, pp. 1929–1958, 2014.\n[34] Y. N. Dauphin, A. Fan, M",
+        "metadata": {
+          "type": "text",
+          "chunk_index": 3,
+          "page": 14,
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+        }
+      },
+      {
+        "content": "long (short) on assets with positive (negative) returns\nover some lookback window. It is an observed\nanomaly in asset prices, meaning it performs contrary\nto the notion of the Capital Asset Pricing Model\n(CAPM) [2]. It has been observed that stocks with\nlarger relative returns over the past year ten",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "type": "text",
+          "chunk_index": 2,
+          "page": 1,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf"
+        }
+      },
+      {
+        "content": "The components inside the dotted blue boxes can be\nstacked M times.\nwith parameters W(·) ∈Rdq×dq and b(·) ∈Rdq,\nwhich we apply element-wise for each time-step\nt.\nIn practice, we incorporate dropout [33] δ(·)\ninto our Transformer, to help prevent overﬁtting.\nFurthermore, we employ residual connection",
+        "metadata": {
+          "type": "text",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 3,
+          "page": 16,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3"
+        }
+      },
+      {
+        "content": "tions accordingly. The univariate TSMOM strategies\nwe focus on differ from the cross-sectional approach\n[7] which studies the comparative performance of\nassets. This is achieved by ranking a portfolio of\nassets based on their relative historical performance,\nfor example, buying the top decile of ass",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 3,
+          "page": 1,
+          "type": "text"
+        }
+      }
+    ]
+  },
+  {
+    "query": "1. \"title: 'retrieval augmented generation' AND topic: NLP\"",
+    "results": [
+      {
+        "content": "AAAI Conference on Artiﬁcial Intelligence, AAAI 2021, Virtual\nConference, vol. 35, no. 12.\nAAAI Press, 2021, pp. 11 106–\n11 115.\n[20] Y.-H. H. Tsai, S. Bai, M. Yamada, L.-P. Morency, and\nR.\nSalakhutdinov,\n“Transformer\ndissection:\nAn\nuniﬁed\nunderstanding for transformer’s attention via the lens of ke",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "text",
+          "chunk_index": 0,
+          "paper_id": "2112.08534v3",
+          "page": 14
+        }
+      },
+      {
+        "content": "1. The image displays a collection of line graphs and tables within a single document, which appears to be related to financial or economic data analysis. The charts are designed in a way that suggests comparison over time, with the x-axis representing time periods such as years (2019 through 2026).",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "page": 10,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "chunk_index": 0,
+          "image_path": "data/images\\2112.08534v3\\page_10_image_1.png"
+        }
+      },
+      {
+        "content": "variables,” arXiv preprint arXiv:1604.06737, 2016.\n[33] N. Srivastava, G. Hinton, A. Krizhevsky, I. Sutskever, and\nR. Salakhutdinov, “Dropout: A simple way to prevent neu-\nral networks from overﬁtting,” Journal of Machine Learning\nResearch, vol. 15, pp. 1929–1958, 2014.\n[34] Y. N. Dauphin, A. Fan, M",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "text",
+          "page": 14,
+          "chunk_index": 3,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3"
+        }
+      },
+      {
+        "content": "The image appears to be a schematic representation of a complex system or process, likely from a technical research paper. It includes various components and arrows indicating connections or interactions between different parts.\n\n1. The image shows a graphical diagram with several interconnected blo",
+        "metadata": {
+          "type": "image_reasoning",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 0,
+          "page": 3,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+        }
+      },
+      {
+        "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding:",
+        "metadata": {
+          "type": "image_reasoning",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 17,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 1,
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+          "paper_id": "2112.08534v3"
+        }
+      },
+      {
+        "content": "1. The image shows a collection of line graphs displaying data over time, with each graph having different labels and titles that are not fully visible due to resolution limitations.\n2. Important labels, axes, objects, arrows, or components:\n   - The first graph on the left seems to have a title lik",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_8_image_2.png",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 1,
+          "type": "image_reasoning",
+          "page": 8,
+          "source": "data/raw_papers\\2112.08534v3.pdf"
+        }
+      },
+      {
+        "content": "- Text annotations including \"Learnable attention weight function,\" which suggests that this is a component that can be updated during learning, and \"Weighted attention mechanism,\" which implies a process where attention weights are used as part of a computational model.",
+        "metadata": {
+          "page": 3,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "type": "image_reasoning",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 2,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+        }
+      },
+      {
+        "content": "The image appears to be a graphical representation of a neural network architecture from a research paper. It shows a complex diagram with various components and connections between them, illustrating the structure of an artificial neural network. Here's a breakdown based on what I can discern:\n\n1. ",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "type": "image_reasoning",
+          "chunk_index": 0,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "page": 18,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_18_image_1.png"
+        }
+      }
+    ]
+  },
+  {
+    "query": "2. (\"retrieval\" OR \"augmented\") AND (\"generation\" OR \"text summarization\")",
+    "results": [
+      {
+        "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding:",
+        "metadata": {
+          "page": 17,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "image_reasoning",
+          "chunk_index": 1,
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png"
+        }
+      },
+      {
+        "content": "2. Important labels, axes, objects, arrows, or components:\n   - The nodes labeled as 'input', 'hidden', 'softmax', and 'output' are the primary components of a neural network.\n   - There are also various math symbols (e.g., +, ×, ÷) that represent different operations in each node.\n   - The arrows c",
+        "metadata": {
+          "page": 18,
+          "image_path": "data/images\\2112.08534v3\\page_18_image_1.png",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 1,
+          "source": "data/raw_papers\\2112.08534v3.pdf"
+        }
+      },
+      {
+        "content": "AAAI Conference on Artiﬁcial Intelligence, AAAI 2021, Virtual\nConference, vol. 35, no. 12.\nAAAI Press, 2021, pp. 11 106–\n11 115.\n[20] Y.-H. H. Tsai, S. Bai, M. Yamada, L.-P. Morency, and\nR.\nSalakhutdinov,\n“Transformer\ndissection:\nAn\nuniﬁed\nunderstanding for transformer’s attention via the lens of ke",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "chunk_index": 0,
+          "page": 14,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "text"
+        }
+      },
+      {
+        "content": "1. The image shows a diagram illustrating the architecture of a system or model with the title \"Sharpe\". It appears to be a conceptual diagram, likely from a technical paper related to machine learning or artificial intelligence.\n2. Important labels:\n   - Shape: This is the name of the system or alg",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 17,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+          "type": "image_reasoning",
+          "chunk_index": 0
+        }
+      },
+      {
+        "content": "- Text annotations including \"Learnable attention weight function,\" which suggests that this is a component that can be updated during learning, and \"Weighted attention mechanism,\" which implies a process where attention weights are used as part of a computational model.",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "chunk_index": 2,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 3,
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png"
+        }
+      },
+      {
+        "content": "2. Important labels and objects:\n   - There are several rectangular nodes connected by arrows pointing between them, which may represent the flow of information or data processing steps in a network. Each node has a number on it that could signify a position in a sequence, a step in a process, or po",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 5,
+          "chunk_index": 1,
+          "image_path": "data/images\\2112.08534v3\\page_5_image_1.png",
+          "type": "image_reasoning"
+        }
+      },
+      {
+        "content": "3. Visible text: The visible text includes the word \"Sharpe,\" which suggests the name of the system or algorithm, and other technical terms such as \"tanh,\" \"Add & norm,\" \"FN,\" \"MHA,\" \"Input embedding,\" \"Encode embedding,\" and \"Output embedding.\" There are also arrows pointing from one component to a",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+          "page": 17,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "chunk_index": 2
+        }
+      },
+      {
+        "content": "2. Important labels and objects include:\n   - Rectangular blocks labeled \"Learnable attention weight function\" (WA), each associated with a numerical label in the range of 1 to 4.\n   - Arrows pointing from one block to another, which likely indicate some form of data flow or process.\n   - Circular n",
+        "metadata": {
+          "page": 3,
+          "chunk_index": 1,
+          "type": "image_reasoning",
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf"
+        }
+      }
+    ]
+  },
+  {
+    "query": "3. (\"RAG\" OR \"Retrieval Augmented Generation\") AND (\"NLP\" OR \"natural language processing\")",
+    "results": [
+      {
+        "content": "AAAI Conference on Artiﬁcial Intelligence, AAAI 2021, Virtual\nConference, vol. 35, no. 12.\nAAAI Press, 2021, pp. 11 106–\n11 115.\n[20] Y.-H. H. Tsai, S. Bai, M. Yamada, L.-P. Morency, and\nR.\nSalakhutdinov,\n“Transformer\ndissection:\nAn\nuniﬁed\nunderstanding for transformer’s attention via the lens of ke",
+        "metadata": {
+          "chunk_index": 0,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "text",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "page": 14
+        }
+      },
+      {
+        "content": "3. The visible text in the image includes mathematical notations such as \"w\" for weight, \"s\" for softmax function, and \"x\" possibly indicating input or output variables. There is also an equation that reads \"y = W^T x,\" which is a common representation of a linear transformation in machine learning ",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "chunk_index": 3,
+          "paper_id": "2112.08534v3",
+          "page": 3,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning"
+        }
+      },
+      {
+        "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding:",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "type": "image_reasoning",
+          "page": 17,
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+          "chunk_index": 1,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture"
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - \"Fairness Tax\"\n   - \"FTT\"\n   - \"Fairness Tax\"\n   - \"FTX\"\n\n4. Why this figure may be important in the paper:\n   - The figures are likely used to analyze and compare different data sets related to financial taxes over time, possibly within a trading or economic context. The data ",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "chunk_index": 3,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "page": 8,
+          "image_path": "data/images\\2112.08534v3\\page_8_image_2.png"
+        }
+      },
+      {
+        "content": "- Text annotations including \"Learnable attention weight function,\" which suggests that this is a component that can be updated during learning, and \"Weighted attention mechanism,\" which implies a process where attention weights are used as part of a computational model.",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "paper_id": "2112.08534v3",
+          "page": 3,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 2,
+          "type": "image_reasoning"
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - The image is too small to read any specific texts within it clearly.\n\n4. Why this figure may be important in the paper:\n   - This type of diagram is commonly used in technical papers or academic research to convey a complex process, algorithm, or system in a visual and structur",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_5_image_1.png",
+          "page": 5,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "image_reasoning",
+          "chunk_index": 2
+        }
+      },
+      {
+        "content": "draw upon useful information from past, potentially\nsimilar, regimes. Furthermore, it can still place too\nmuch emphasis on the fast-reverting regime, resulting\nin poor performance when considering returns net\nof transaction cost.\nIn this paper, we introduce the Momentum Trans-\nformer, a subclass of ",
+        "metadata": {
+          "chunk_index": 1,
+          "paper_id": "2112.08534v3",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "text",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 2
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - The image is too small and blurry for any specific text to be read accurately. The visible text in the line graph includes symbols that are typically used to denote statistical data points or intervals, but without clearer resolution or a higher-resolution image, it's impossibl",
+        "metadata": {
+          "chunk_index": 2,
+          "image_path": "data/images\\2112.08534v3\\page_11_image_1.png",
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "page": 11
+        }
+      }
+    ]
+  },
+  {
+    "query": "4. (\"search query\" OR \"information retrieval\") AND (\"generation\" OR \"summarization\")",
+    "results": [
+      {
+        "content": "AAAI Conference on Artiﬁcial Intelligence, AAAI 2021, Virtual\nConference, vol. 35, no. 12.\nAAAI Press, 2021, pp. 11 106–\n11 115.\n[20] Y.-H. H. Tsai, S. Bai, M. Yamada, L.-P. Morency, and\nR.\nSalakhutdinov,\n“Transformer\ndissection:\nAn\nuniﬁed\nunderstanding for transformer’s attention via the lens of ke",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "text",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "page": 14,
+          "chunk_index": 0
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - \"Fairness Tax\"\n   - \"FTT\"\n   - \"Fairness Tax\"\n   - \"FTX\"\n\n4. Why this figure may be important in the paper:\n   - The figures are likely used to analyze and compare different data sets related to financial taxes over time, possibly within a trading or economic context. The data ",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "chunk_index": 3,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "page": 8,
+          "image_path": "data/images\\2112.08534v3\\page_8_image_2.png"
+        }
+      },
+      {
+        "content": "- MHA: Likely refers to \"Multi-Head Attention,\" a type of attention mechanism used in the Transformer architecture.\n   - Input embedding: Labels for the input data and its transformation into an embeddings format, which is a common process in natural language processing tasks.\n   - Encode embedding:",
+        "metadata": {
+          "page": 17,
+          "chunk_index": 1,
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_17_image_1.png",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning"
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - The image is too small to read any specific texts within it clearly.\n\n4. Why this figure may be important in the paper:\n   - This type of diagram is commonly used in technical papers or academic research to convey a complex process, algorithm, or system in a visual and structur",
+        "metadata": {
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_5_image_1.png",
+          "page": 5,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "type": "image_reasoning",
+          "chunk_index": 2
+        }
+      },
+      {
+        "content": "- Text annotations including \"Learnable attention weight function,\" which suggests that this is a component that can be updated during learning, and \"Weighted attention mechanism,\" which implies a process where attention weights are used as part of a computational model.",
+        "metadata": {
+          "type": "image_reasoning",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 2,
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png",
+          "page": 3,
+          "paper_id": "2112.08534v3"
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - The image is too small and blurry for any specific text to be read accurately. The visible text in the line graph includes symbols that are typically used to denote statistical data points or intervals, but without clearer resolution or a higher-resolution image, it's impossibl",
+        "metadata": {
+          "chunk_index": 2,
+          "image_path": "data/images\\2112.08534v3\\page_11_image_1.png",
+          "paper_id": "2112.08534v3",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "type": "image_reasoning",
+          "page": 11
+        }
+      },
+      {
+        "content": "3. The visible text in the image includes mathematical notations such as \"w\" for weight, \"s\" for softmax function, and \"x\" possibly indicating input or output variables. There is also an equation that reads \"y = W^T x,\" which is a common representation of a linear transformation in machine learning ",
+        "metadata": {
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "page": 3,
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "chunk_index": 3,
+          "type": "image_reasoning",
+          "paper_id": "2112.08534v3",
+          "image_path": "data/images\\2112.08534v3\\page_3_image_1.png"
+        }
+      },
+      {
+        "content": "3. Visible text:\n   - The top left corner contains the title \"Trend in Volume of Imported/Exported Products with Foreign Currency,\" which is cut off and not fully visible.\n   - Other text within the image includes numerical values, error bars, axis labels (including years), and the legends for each ",
+        "metadata": {
+          "title": "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture",
+          "paper_id": "2112.08534v3",
+          "type": "image_reasoning",
+          "source": "data/raw_papers\\2112.08534v3.pdf",
+          "image_path": "data/images\\2112.08534v3\\page_10_image_1.png",
+          "page": 10,
+          "chunk_index": 2
+        }
+      }
+    ]
+  }
+]

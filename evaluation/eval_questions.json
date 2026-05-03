@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the main contribution of the paper?",
+    "expected_keywords": ["Momentum Transformer", "attention", "LSTM", "long-term dependencies"]
+  },
+  {
+    "question": "Why does the paper say attention helps compared to LSTM?",
+    "expected_keywords": ["direct connection", "previous time-steps", "long-term dependencies", "regime change"]
+  },
+  {
+    "question": "What is the role of multi-head attention?",
+    "expected_keywords": ["multiple attention heads", "different timescales", "temporal dynamics"]
+  },
+  {
+    "question": "What does the paper say about CPD?",
+    "expected_keywords": ["changepoint detection", "regime change", "CPD", "Bayesian"]
+  },
+  {
+    "question": "What do the figures explain?",
+    "expected_keywords": ["image", "figure", "attention", "architecture", "image_reasoning"]
+  }
+]

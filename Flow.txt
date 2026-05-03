@@ -1,0 +1,53 @@
+arXiv/
+├── api/
+│   └── app.py
+│
+├── core/
+│   ├── cache.py
+│   ├── config.py
+│   ├── logging_utils.py
+│   ├── model_registry.py
+│   ├── monitoring.py
+│   └── security.py
+│
+├── data/
+│   ├── embeddings/
+│   ├── images/
+│   ├── parsed/
+│   └── raw_papers/
+│
+│
+├── evaluation/
+│   ├── eval_questions.json
+│   ├── evaluate_rag.py
+│   └── experiment_tracking.py
+│
+├── ingestion/
+│   ├── chunking.py
+│   ├── deduplication.py
+│   ├── embed_store.py
+│   ├── fetch_arxiv.py
+│   ├── image_reasoning.py
+│   ├── index_management.py
+│   └── parse_pdf.py
+│
+├── llm/
+│   ├── generator.py
+│   ├── prompt.py
+│   └── prompt_versions.py
+│
+├── pipeline/
+│   └── rag_pipeline.py
+│
+├── retrieval/
+│   ├── hybrid_search.py
+│   ├── multi_query.py
+│   ├── query_understanding.py
+│   └── reranker.py
+│
+├── logs/
+│
+├── main.py
+├── streamlit_app.py
+├── requirements.txt
+└── .env.example

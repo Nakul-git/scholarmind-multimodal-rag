@@ -1,0 +1,90 @@
+[
+  {
+    "question": "What is the main contribution of the paper?",
+    "expected_keywords": [
+      "Momentum Transformer",
+      "attention",
+      "LSTM",
+      "long-term dependencies"
+    ],
+    "matched_keywords": [
+      "Momentum Transformer"
+    ],
+    "keyword_coverage": 0.25,
+    "source_correctness": 1.0,
+    "hallucination_risk": 0.0,
+    "risky_phrases": [],
+    "answer": "\n================ ANSWER ================\n\nBased on the provided context, it appears that the paper \"Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\" proposes a new architecture for trading using a momentum transformer. However, the exact details of the main contribution are not explicitly stated in the provided chunks.\n\nFrom Chunk 3, we can infer that the paper presents a neural network model with multiple layers and operations, which suggests that the main contribution may be related to the development of this novel architecture.\n\nChunk 5 provides a graphical representation of the neural network architecture, showing the structure of an artificial neural network. This diagram illustrates the data flow through the layers, indicating how inputs are processed to generate outputs.\n\nWhile we cannot provide a definitive answer without additional context from the accompanying text in the research paper, it is possible that the main contribution of the paper lies in the development and explanation of this novel architecture for trading using a momentum transformer.\n\nHowever, based on the information provided, I can suggest that the main contribution of the paper may be related to the introduction and explanation of the momentum transformer architecture, as mentioned in Chunk 3:\n\n\"This type of figure is crucial for understanding the methodology and structure of the neural network model proposed by the researchers.\"\n\n[Chunk 3]\n\nAdditionally, Chunk 5 provides a graphical representation of the neural network architecture, which suggests that the paper may focus on explaining and visualizing this novel architecture.\n\nWithout further context or information from the accompanying text in the research paper, it is challenging to provide a more specific answer.\n\n================ SOURCES ================\n\n[Chunk 1]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 5\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_5_image_1.png\n\n[Chunk 2]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 11\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_11_image_1.png\n\n[Chunk 3]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 18\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_18_image_1.png\n\n[Chunk 4]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 16\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_16_image_1.png\n\n[Chunk 5]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 18\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_18_image_1.png\n"
+  },
+  {
+    "question": "Why does the paper say attention helps compared to LSTM?",
+    "expected_keywords": [
+      "direct connection",
+      "previous time-steps",
+      "long-term dependencies",
+      "regime change"
+    ],
+    "matched_keywords": [
+      "direct connection",
+      "long-term dependencies"
+    ],
+    "keyword_coverage": 0.5,
+    "source_correctness": 1.0,
+    "hallucination_risk": 0.0,
+    "risky_phrases": [],
+    "answer": "\n================ ANSWER ================\n\nThe paper suggests that attention-based architectures are better suited for capturing long-term dependencies in time-series data because they can form a direct connection with each timestamp, alleviating issues such as forgetting and error accumulations over long forecasting horizons.\n\n[Chunk 4] states: \"The recursive structure can potentially lead to large error accumulations over long forecasting horizons and its resetting mechanism prevents access to information from similar regimes in the past. The attention mechanism forms a direct connection with each timestamp, alleviating both of these issues, meaning it is more appropriate for capturing long-term dependencies.\"\n\n[Chunk 5] also mentions that the Transformer needs to preserve positional context explicitly because the dot-product operation cannot capture local context, and that injecting information about relative or absolute position into the embedding can be beneficial.\n\nAdditionally, [Chunk 4] compares attention-based architectures with LSTM models, stating that attention-based architectures are robust to significant events such as during the SARS-CoV-2 market crash, whereas LSTMs are prone to forgetting when dealing with large sequences.\n\n[Chunk 3] also mentions that all attention-based architectures tested are robust to significant events, and that results from non-hybrid architectures, such as the Transformer and Informer, are on an upward trend in recent years and outperformed the TFT model during the SARS-CoV-2 market crash.\n\n================ SOURCES ================\n\n[Chunk 1]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 9\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 2]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 12\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 3]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 12\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 4]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 3\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 5]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 4\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n"
+  },
+  {
+    "question": "What is the role of multi-head attention?",
+    "expected_keywords": [
+      "multiple attention heads",
+      "different timescales",
+      "temporal dynamics"
+    ],
+    "matched_keywords": [],
+    "keyword_coverage": 0.0,
+    "source_correctness": 1.0,
+    "hallucination_risk": 0.0,
+    "risky_phrases": [],
+    "answer": "\n================ ANSWER ================\n\nThe role of Multi-Head Attention (MHA) in the context of the Momentum Transformer architecture can be understood from two sources.\n\nAccording to [Chunk 2], MHA is defined as:\n\nMHA(xt) =\nH\nX\ni=1\n(WO,i)⊤\nT\nX\nτ=1\nst,ταi(xt, xτ)Wv,ixτ,\n\nwhere WO,i is an additional linear mapping that projects each head back into Rdq. This ensures that the model only attends to previous time-steps.\n\nIn addition, [Chunk 4] mentions interpretable multi-head attention as a component of the Sharpe system, which provides insight into how the model focuses on significant events and similar regimes.\n\nFurthermore, [Chunk 3] depicts an image (page 17) that explains the Sharpe model, including processes like normalization, addition, multi-head attention, and encoding/decoding for input and output data. This suggests that MHA plays a crucial role in the overall architecture of the Momentum Transformer.\n\nIn summary, Multi-Head Attention is used to enable the model to attend to previous time-steps and focus on significant events and similar regimes, while also being an important component of the Sharpe system.\n\n================ SOURCES ================\n\n[Chunk 1]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 17\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_17_image_1.png\n\n[Chunk 2]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 3\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 3]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 17\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_17_image_1.png\n\n[Chunk 4]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 9\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 5]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 2\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n"
+  },
+  {
+    "question": "What does the paper say about CPD?",
+    "expected_keywords": [
+      "changepoint detection",
+      "regime change",
+      "CPD",
+      "Bayesian"
+    ],
+    "matched_keywords": [
+      "changepoint detection",
+      "CPD"
+    ],
+    "keyword_coverage": 0.5,
+    "source_correctness": 1.0,
+    "hallucination_risk": 0.0,
+    "risky_phrases": [],
+    "answer": "\n================ ANSWER ================\n\nBased on the provided context, it appears that the paper discusses the use of Changepoint Detection (CPD) in a Momentum Transformer (TFT) architecture for trading.\n\nAccording to Chunk 2 [Chunk 2], the authors mention that they can optionally incorporate a CPD module, which is a feature preprocessing step for each time t. The additional features added for each time-step are changepoint severity ν(i)t(l) ∈(0, 1) and changepoint location γ(i)t(l) ∈(0, 1), which measure the normalised location of the changepoint in the lookback window l.\n\nIn Chunk 3 [Chunk 3], Exhibit 6 shows the average variable importance for different architectures with and without CPD. The results indicate that the inclusion of CPD leads to a more interpretable model.\n\nAdditionally, in Chunk 4 [Chunk 4], it is mentioned that the authors tested a variation of the best performing architecture, the Decoder-Only TFT, where they included CPD covariates.\n\nFinally, in Chunk 5 [Chunk 5], an image is provided (Figure 18) that appears to be a graphical representation of a neural network architecture. However, this information does not directly relate to CPD.\n\nOverall, it can be inferred that the paper discusses the use of CPD as a feature preprocessing step for improving the interpretability and performance of the Momentum Transformer architecture in trading.\n\n================ SOURCES ================\n\n[Chunk 1]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 9\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 2]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 6\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 3]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 9\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 4]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 6\nChunk type: text\nPDF: data/raw_papers\\2112.08534v3.pdf\n\n[Chunk 5]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 18\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_18_image_1.png\n"
+  },
+  {
+    "question": "What do the figures explain?",
+    "expected_keywords": [
+      "image",
+      "figure",
+      "attention",
+      "architecture",
+      "image_reasoning"
+    ],
+    "matched_keywords": [
+      "image",
+      "figure",
+      "architecture",
+      "image_reasoning"
+    ],
+    "keyword_coverage": 0.8,
+    "source_correctness": 1.0,
+    "hallucination_risk": 0.0,
+    "risky_phrases": [],
+    "answer": "\n================ ANSWER ================\n\nBased on the provided context, the figures appear to be explaining various aspects of the research paper \"Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\".\n\nFigure 1 (Page 11) appears to show a line chart or time series plot illustrating accumulated GDP over time intervals. The title is incomplete, but it suggests that this figure may be related to economic data.\n\nFigure 2 (Page 8) shows multiple panels with different data sets over time, each representing a specific metric. This figure likely illustrates trends, correlations, or changes in these metrics across different years.\n\nFigure 3 (Page 11) is a close-up view of another line chart, but the details are not visible due to resolution. However, it may be related to analyzing and comparing financial tax data over time.\n\nFigure 4 (Page 8) displays a line graph with multiple panels, each representing different data sets over time. This figure appears to illustrate trends, correlations, or changes in specific metrics across different years.\n\nFigure 5 (Page 18) presents the structure of a neural network model, showing how data is processed through its layers and operations. This figure serves as a visual guide to understanding the methodology and computational steps involved in making predictions or decisions based on input data.\n\nIn summary, these figures likely explain various aspects of the research paper, including economic data, financial tax analysis, and the structure of a neural network model.\n\n================ SOURCES ================\n\n[Chunk 1]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 11\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_11_image_2.png\n\n[Chunk 2]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 8\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_8_image_2.png\n\n[Chunk 3]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 11\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_11_image_1.png\n\n[Chunk 4]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 8\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_8_image_1.png\n\n[Chunk 5]\nSource: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture\nPage: 18\nChunk type: image_reasoning\nPDF: data/raw_papers\\2112.08534v3.pdf\nImage path: data/images\\2112.08534v3\\page_18_image_1.png\n"
+  }
+]

@@ -1,0 +1,44 @@
+
+================ ANSWER ================
+
+Based on the provided context, I can attempt to answer your question.
+
+However, I must point out that there is insufficient context to provide a clear and accurate response. The provided text appears to be repeated multiple times with no additional information or changes in content. It seems like a repetition of the same text without any new insights or details.
+
+If you could provide more context or clarify what specific aspect of "Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture" you would like me to assist with, I would be happy to try again.
+
+================ SOURCES ================
+
+[Chunk 1]
+Source: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Chunk type: image_reasoning
+PDF: data/raw_papers\2112.08534v3.pdf
+Image path: data/images\2112.08534v3\page_17_image_1.png
+
+[Chunk 2]
+Source: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Chunk type: image_reasoning
+PDF: data/raw_papers\2112.08534v3.pdf
+Image path: data/images\2112.08534v3\page_17_image_1.png
+
+[Chunk 3]
+Source: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Chunk type: image_reasoning
+PDF: data/raw_papers\2112.08534v3.pdf
+Image path: data/images\2112.08534v3\page_17_image_1.png
+
+[Chunk 4]
+Source: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 17
+Chunk type: image_reasoning
+PDF: data/raw_papers\2112.08534v3.pdf
+Image path: data/images\2112.08534v3\page_17_image_1.png
+
+[Chunk 5]
+Source: Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture
+Page: 19
+Chunk type: text
+PDF: data/raw_papers\2112.08534v3.pdf

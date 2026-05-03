@@ -1,0 +1,21 @@
+{
+  "step_seconds": {
+    "query_validation": 3.0800001695752144e-05,
+    "query_understanding": 2.7000001864507794e-05,
+    "multi_query": 1.4179978000029223,
+    "retrieval": 0.3476147999972454,
+    "rrf": 0.00020339999900897965,
+    "rerank": 1.4251614000022528,
+    "context_validation": 1.920000067912042e-05,
+    "prompt_building": 0.0008231000028899871,
+    "generation": 2.2816715000008116,
+    "output_processing": 0.00186089999624528
+  },
+  "counters": {
+    "errors": 0,
+    "retrieval_failures": 0,
+    "empty_responses": 0,
+    "token_estimate": 0,
+    "cost_estimate_usd": 0
+  }
+}
